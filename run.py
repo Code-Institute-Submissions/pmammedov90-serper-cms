@@ -133,4 +133,22 @@ class register:
             for unit_num, grade in enumerate(p.grades, start=1):
                 print(f"Unit {unit_num}: {grade}")
 
+# Function to read course data from files
+def read():
+    c = []
+    fnames = os.listdir("files")
+    for name in fnames:
+        t_dict = {}
+        with open(os.path.join("files", name), "r") as f:
+            data = f.read()
+            for items in (data.split("---")):
+                if items:
+                    try:
+                        k, v = items.split("~~")
+                        t_dict[k] = v
+                    except ValueError:
+                        print("Error parsing data:", items)
+        c.append(t_dict)
+    return c
+
 
