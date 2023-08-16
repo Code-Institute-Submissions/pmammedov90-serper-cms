@@ -151,4 +151,16 @@ def read():
         c.append(t_dict)
     return c
 
+# Function to generate sample pupil data
+def samplepupils():
+    sample = []
+    for x in range(8):
+        p = pupil()
+        p.id = "00" + str(x)
+        p.name = "Sample" + str(x)
+        for _ in range(8):
+            p.grades.append(np.random.randint(0, 100))
+        sample.append(p)
+    return sample
+
 
