@@ -166,8 +166,6 @@ def samplepupils():
 # Main function to manage the course management system
 def main():
     courses = read()
-    sample_data = samplepupils()
-
     r = register(courses)
     x = 0
     while x != -1:
