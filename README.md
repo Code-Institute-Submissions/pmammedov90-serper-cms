@@ -1,31 +1,49 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# SERPER-CMS
 
-Welcome USER_NAME,
+Welcome to the Serper Course Management System! This Python program provides a simple yet effective way to manage university foundation courses and pupil registrations. With this system, you can view course details, register pupils, grade them, and display their progress.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+## Features
 
-## Reminders
+- View detailed information about available courses.
+- Register pupils with their ID, name, and selected course.
+- Grade pupils by entering their grades for individual units.
+- Display the progress of pupils, including average grades and results.
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+## Getting Started
 
-## Creating the Heroku app
+1. **Prerequisites**: Ensure you have Python 3 installed on your system.
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+2. **Clone the Repository**: Clone this repository to your local machine using the following command: _git clone https://github.com/pmammedov90/serper-cms.git
+3. **Navigate to the Project Directory**: Open a terminal or command prompt, and go to the project directory: **_cd serper-cms**
+4. **Run the Program**: Start the Course Management System by executing the main script: _**python run.py**_
 
-1. `heroku/python`
-2. `heroku/nodejs`
+## Usage
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+1. **Main Menu**: Choose an option from the main menu:
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+- **View Courses**: Explore available courses and their descriptions.
+- **Register Pupil**: Register a new pupil with their ID, name, and chosen course.
+- **Grade Pupil**: Enter grades for each unit to assess the pupil's progress.
+- **Display Progress**: View a summary of each pupil's average grade and result.
+- **Exit**: Quit the program.
 
-Connect your GitHub repository and deploy as normal.
+2. **Follow the Prompts**: Depending on your selection, follow the prompts to interact with the system and manage courses and pupils.
 
-## Constraints
+3. **Grading Units**: When grading pupils, the program will prompt you to enter grades for each of the 8 units. Grades should be entered as numerical values (0-100).
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+## Notes
 
------
-Happy coding!
+- Make sure to have the necessary course information files in the "files" directory.
+- For grading, enter grades for each unit in sequence from 1 to 8.
+
+## Feedback and Support
+
+If you encounter any issues, have questions, or would like to provide feedback, please feel free to [create an issue](https://github.com/pmammedov90/serper-cms/issues) on this repository.
+
+## Acknowledgments
+
+- This project is developed for educational purposes and demonstrates fundamental Python programming concepts.
+
+---
+
+Enjoy using the Course Management System!
