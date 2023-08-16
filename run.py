@@ -204,3 +204,7 @@ def main():
             print("Enter a valid number or -1 to exit.")
 
 
+# Entry point
+if __name__ == "__main__":
+    main()
+
