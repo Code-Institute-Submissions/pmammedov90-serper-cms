@@ -163,4 +163,46 @@ def samplepupils():
         sample.append(p)
     return sample
 
+# Main function to manage the course management system
+def main():
+    courses = read()
+    sample_data = samplepupils()
+
+    r = register(courses)
+    x = 0
+    while x != -1:
+        print("\n--- Welcome to Course Management System ---")  # Display the welcome message
+        print("Select an option:")
+        print("1: View Courses")
+        print("2: Register Pupil")
+        print("3: Grade Pupil")
+        print("4: Display Progress")
+        print("-1: Exit")
+        x = input("Enter your choice: ")
+
+        # Check if the input is "-1" to exit
+        if x == "-1":
+            exit_choice = input("Are you sure you want to exit? (yes/no): ")
+            if exit_choice.lower() == "yes":
+                print("Thanks for using our Course Management System. Goodbye!")
+                break
+            elif exit_choice.lower() == "no":
+                continue  # Stay in the main menu
+            else:
+                print("Invalid choice. Please enter 'yes' or 'no'.")
+        elif x.isnumeric():
+            x = int(x)
+            if x == 1:
+                viewCourse(courses)
+            elif x == 2:
+                r.register_pupils()  # Call the register_pupils method on the register instance
+            elif x == 3:
+                r.grade_pupil()
+            elif x == 4:
+                r.display_grades()
+            else:
+                print("Enter a valid number.")
+        else:
+            print("Enter a valid number or -1 to exit.")
+
 
