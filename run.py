@@ -1,6 +1,6 @@
 
 import os
-omport numpy as np
+import numpy as np
 
 # Function to view course information
 def viewCourse(courses):
