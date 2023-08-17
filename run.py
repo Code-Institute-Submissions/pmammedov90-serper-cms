@@ -9,7 +9,7 @@ def viewCourse(courses):
             print(f"{i}: {course['key']}")
 
         print("\n----------------\n")
-        x = input("Enter course number to view info:\nEnter -1 to go back to the main menu:\n ")
+        x = input("Enter course number to view info:\nEnter -1 to go back to the main menu:\n")
 
         # Check if the input is "-1" to go back to the main menu
         if x == "-1":
@@ -30,7 +30,7 @@ def viewCourse(courses):
                     for j, val in enumerate(course_items_to_display, start=1):
                         print(f"{j}: {val}")
 
-                    y = int(input("Select Info to be shown:\nEnter -1 to go back to the main menu:\n "))
+                    y = int(input("Select Info to be shown:\nEnter -1 to go back to the main menu:\n"))
                     if y == -1:
                         print("Going back to the main menu.")
                         break
