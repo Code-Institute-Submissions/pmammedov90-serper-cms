@@ -9,7 +9,7 @@ def viewCourse(courses):
             print(f"{i}: {course['key']}")
 
         print("\n----------------\n")
-        x = input("Enter course number to view info:\nEnter -1 to go back to the main menu: ")
+        x = input("Enter course number to view info:\nEnter -1 to go back to the main menu:\n ")
 
         # Check if the input is "-1" to go back to the main menu
         if x == "-1":
@@ -30,7 +30,7 @@ def viewCourse(courses):
                     for j, val in enumerate(course_items_to_display, start=1):
                         print(f"{j}: {val}")
 
-                    y = int(input("Select Info to be shown:\nEnter -1 to go back to the main menu: "))
+                    y = int(input("Select Info to be shown:\nEnter -1 to go back to the main menu:\n "))
                     if y == -1:
                         print("Going back to the main menu.")
                         break
@@ -61,14 +61,14 @@ class register:
 
     def register_pupils(self):
         p = pupil()
-        p.id = input("Enter ID: ")
-        p.name = input("Enter Name: ")
+        p.id = input("Enter ID:\n")
+        p.name = input("Enter Name:\n")
         print("\n--- Courses Available ---")  # Display the "Courses Available" title
         for idx, k in enumerate(self.course_keys, start=1):
             print(f"{idx}: {k}")
 
         try:
-            num = int(input("Enter Course number: "))
+            num = int(input("Enter Course number:\n"))
             if 1 <= num <= len(self.course_keys):
                 p.course = self.course_keys[num - 1]
                 print("\n------------- Registered\n")
@@ -80,7 +80,7 @@ class register:
 
     # Method to grade a pupil
     def grade_pupil(self):
-        pupil_id = input("Enter the ID of the pupil to grade: ")
+        pupil_id = input("Enter the ID of the pupil to grade:\n")
         found_pupil = None
         for p in self.pupils:
             if p.id == pupil_id:
@@ -93,7 +93,7 @@ class register:
         print("Enter grades (0-100) for the pupil:")
         for x in range(1, 9):
             try:
-                grade = int(input(f"Enter grade for unit no {x}: "))
+                grade = int(input(f"Enter grade for unit no {x}:\n"))
                 if 0 <= grade <= 100:
                     found_pupil.grades.append(grade)  # Append grades to existing list
                 else:
@@ -176,11 +176,11 @@ def main():
         print("3: Grade Pupil")
         print("4: Display Progress")
         print("-1: Exit")
-        x = input("Enter your choice: ")
+        x = input("Enter your choice:\n")
 
         # Check if the input is "-1" to exit
         if x == "-1":
-            exit_choice = input("Are you sure you want to exit? (yes/no): ")
+            exit_choice = input("Are you sure you want to exit? (yes/no):\n")
             if exit_choice.lower() == "yes":
                 print("Thanks for using our Course Management System. Goodbye!")
                 break
