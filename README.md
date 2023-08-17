@@ -15,7 +15,15 @@ Welcome to the Serper Course Management System! This Python program provides a s
 
 2. **Clone the Repository**: Clone this repository to your local machine using the following command: _git clone https://github.com/pmammedov90/serper-cms.git
 3. **Navigate to the Project Directory**: Open a terminal or command prompt, and go to the project directory: **_cd serper-cms**
-4. **Run the Program**: Start the Course Management System by executing the main script: _**python run.py**_
+4. **Install numpy library**: If you're encountering an issue with import numpy as np, it might be due to the fact that the numpy library is not installed in your Python environment. Here's how you can install numpy using pip: 
+    1. Open your terminal or command prompt.
+    2. Run the following command to install numpy: **pip install numpy**
+    3. Wait for the installation process to complete. 
+    4. You should see output indicating the installation progress.
+
+Once the installation is complete, you should be able to use import numpy as np in your Python code without any issues.
+5. **Run the Program**: Start the Course Management System by executing the main script: _**python run.py**_
+
 
 ## Usage
 
