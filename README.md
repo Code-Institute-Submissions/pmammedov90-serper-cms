@@ -21,7 +21,7 @@ Welcome to the Serper Course Management System! This Python program provides a s
     3. Wait for the installation process to complete. 
     4. You should see output indicating the installation progress.
 
-Once the installation is complete, you should be able to use import numpy as np in your Python code without any issues.
+Once the installation is complete, you should be able to use **import numpy as** np in your Python code without any issues.
 5. **Run the Program**: Start the Course Management System by executing the main script: _**python run.py**_
 
 
